@@ -40,9 +40,6 @@ alias lsd='eza -d'
 # List files with tree view
 alias lstree='eza --tree'
 
-
-autoload -U promptinit; promptinit
-prompt pure
 # End of lines added by compinstall
 
 eval "$(starship init zsh)"
@@ -51,9 +48,6 @@ eval "$(zoxide init zsh)"
 catnap
 
 export PATH=$PATH:/home/ankush/.spicetify
-
-autoload -U promptinit; promptinit
-prompt pure
 
 # Enviroment  Variables
 export VISUAL=nvim
