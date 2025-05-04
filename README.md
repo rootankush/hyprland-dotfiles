@@ -1,15 +1,26 @@
 # My Hyprland Dotfiles
 ## Details
-- **OS**: Arch Linux  
-- **WM**: Hyprland  
-- **Topbar**: Waybar  
-- **Menu**: Rofi  
-- **Notification daemon**: mako  
-- **GTK**: Gruvbox  
-- **Font**: Fira Mono Nerd Fonts  
-- **Terminal**: Foot
-- **TextEditor**: Neovim  
-- **File manager**: nnn
+```
+    > OS: Arch Linux
+
+    > WM: Hyprland
+  
+    > Topbar: Waybar
+  
+    > Menu: Rofi
+  
+    > Notification daemon: mako
+  
+    > GTK: Gruvbox
+  
+    > Font: Fira Mono Nerd Fonts
+  
+    > Terminal: Foot
+
+    > TextEditor: Neovim
+  
+    > File manager: nnn
+```
 
 ## ScreenShots
 ### Terminal (foot)
