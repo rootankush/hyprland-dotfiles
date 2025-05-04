@@ -1,6 +1,12 @@
 # My Hyprland Dotfiles
 
 ## Pics
+### Terminal (foot)
+![2025-05-04-232718_hyprshot](https://github.com/user-attachments/assets/b6444d05-f3de-40d0-8d40-7cb9342cfc5c)
+### Menu (Rofi)
+![Uploading 2025-05-04-232731_hyprshot.png…]()
+### Status Bar (Waybar)
+![Uploading 2025-05-04-232704_hyprshot.png…]()
 
 ## Requirements
 
