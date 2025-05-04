@@ -1,0 +1,52 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "margin-top": 20,
+  "margin-right": 23,
+  "margin-bottom": 0,
+  "margin-left": 23,
+  "border-radius": 2,
+  "modules-left": ["clock"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": ["network", "pulseaudio", "battery"],
+
+  "hyprland/workspaces": {
+    "show-special": true,
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": "",
+    },
+  },
+
+  "clock": {
+    "tooltip-format": "{:%A, %B %d, %Y}",
+    "format": "  {:%I:%M %p}",
+    "interval": 60,
+  },
+
+  "battery": {
+    "format": "  {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "interval": 30,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15,
+    },
+  },
+
+  "network": {
+    "interface": "wlan0", // or your actual interface (use `ip link` to check)
+    "format": "    {essid}",
+    "on-click": "~/.local/bin/wifi-menu",
+  },
+
+  "pulseaudio": {
+    "format": "   {volume}%",
+    "format-bluetooth": "󰂰   {volume}%",
+    "format-muted": "",
+  },
+}

@@ -1,0 +1,69 @@
+* {
+    font: "FiraCode Nerd Font 12";
+    background: rgba(40, 40, 40, 0.9);      // Gruvbox dark0_hard
+    foreground: #ebdbb2;
+    selected-bg: #665c54;                  // Gruvbox blue
+    selected-fg: #fbf1c7;                  // light1
+    border-color: #ebebeb;
+    border-radius: 5px;
+    spacing: 5px;
+}
+
+window {
+    padding: 10px;
+    border: 2px solid @border-color;
+    background-color: @background;
+    border-radius: 5px;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [inputbar, listview];
+}
+
+inputbar {
+    background-color: rgba(60, 56, 54, 0.9);  // dark1
+    border: 0;
+    padding: 6px;
+    margin: 5px;
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: @foreground;
+}
+
+entry {
+    text-color: @foreground;
+    expand: true;
+}
+
+listview {
+    background-color: transparent;
+    lines: 10;
+    spacing: 5px;
+    scrollbar: false;
+}
+
+element {
+    background-color: transparent;
+    text-color: @foreground;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+element selected {
+    background-color: @selected-bg;
+    text-color: @selected-fg;
+}
+
+element-icon {
+    size: 24px;
+    margin: 0px 10px 0px 0px;
+}
+
+element-text {
+    text-color: @foreground;
+    font-size: 15px;
+}
