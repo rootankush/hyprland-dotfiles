@@ -40,6 +40,17 @@ alias lsd='eza -d'
 # List files with tree view
 alias lstree='eza --tree'
 
+# Git Aliases
+alias g='git'
+alias ga='git add'
+alias gcm='git commit -m'
+alias gs='git status'
+alias gb='git branch'
+alias gp='git push'
+alias gpl='git pull'
+alias gcl='git clone'
+alias gr='git restore'
+
 # End of lines added by compinstall
 
 eval "$(starship init zsh)"
