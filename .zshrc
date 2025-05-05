@@ -9,6 +9,10 @@ zstyle :compinstall filename '/home/ankush/.zshrc'
 #Plugins
 source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/plugins/zsh-alias-finder/zsh-alias-finder.plugin.zsh
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 fpath+=($HOME/.zsh/pure)
 
