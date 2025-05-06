@@ -27,16 +27,13 @@
 ## ScreenShots
 
 ### Terminal (foot)
-
-![Terminal](.wallpaper/gruvbox_spac.jpg)
+![2025-05-06-155628_hyprshot](https://github.com/user-attachments/assets/79261178-27bd-443b-be88-3601b4624ef5)
 
 ### Menu (Rofi)
-
-![Menu]()
+![2025-05-06-155636_hyprshot](https://github.com/user-attachments/assets/93de5e30-3cbb-4daf-ad6a-aef4e2af9ccc)
 
 ### Status Bar (Waybar)
-
-![2025-05-04-232704_hyprshot](https://github.com/user-attachments/assets/e44dbedf-78b0-417e-ba77-469253f49893)
+![2025-05-06-155618_hyprshot](https://github.com/user-attachments/assets/d330bd8a-f11d-4fb5-b9ce-1309829c423e)
 
 ## Requirements
 
