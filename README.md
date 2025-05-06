@@ -1,33 +1,41 @@
 # My Hyprland Dotfiles
+
 ## Details
+
 ```
     > OS: Arch Linux
 
     > WM: Hyprland
-  
+
     > Topbar: Waybar
-  
+
     > Menu: Rofi
-  
+
     > Notification daemon: mako
-  
+
     > GTK: Gruvbox
-  
+
     > Font: Fira Mono Nerd Fonts
-  
+
     > Terminal: Foot
 
     > TextEditor: Neovim
-  
+
     > File manager: nnn
 ```
 
 ## ScreenShots
+
 ### Terminal (foot)
-![2025-05-04-232718_hyprshot](https://github.com/user-attachments/assets/b6444d05-f3de-40d0-8d40-7cb9342cfc5c)
+
+![Terminal](.wallpaper/gruvbox_spac.jpg)
+
 ### Menu (Rofi)
-![2025-05-04-232731_hyprshot](https://github.com/user-attachments/assets/4cac7bb5-551f-42ef-9ac9-73d4757cf309)
+
+![Menu]()
+
 ### Status Bar (Waybar)
+
 ![2025-05-04-232704_hyprshot](https://github.com/user-attachments/assets/e44dbedf-78b0-417e-ba77-469253f49893)
 
 ## Requirements
