@@ -68,5 +68,5 @@ export PATH=$PATH:/home/ankush/.spicetify
 export VISUAL=nvim
 export EDITOR=nvim
 export TERM="tmux-256color"
-
+export GTK_THEME=Gruvbox-Dark
 export BROWSER="zen"

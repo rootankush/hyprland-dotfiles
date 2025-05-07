@@ -7,9 +7,9 @@
   "margin-bottom": 0,
   "margin-left": 23,
   "border-radius": 2,
-  "modules-left": ["clock"],
-  "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["network", "pulseaudio", "battery"],
+  "modules-left": ["clock", "hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": ["pulseaudio", "battery", "network"],
 
   "hyprland/workspaces": {
     "show-special": true,
@@ -27,26 +27,55 @@
   },
 
   "battery": {
-    "format": "  {capacity}%",
-    "format-charging": "  {capacity}%",
-    "format-plugged": "  {capacity}%",
-    "interval": 30,
     "states": {
-      "good": 95,
-      "warning": 30,
+      "warning": 20,
       "critical": 15,
     },
+    "format": "BAT: [ {icon} ] <span size='12pt'>{capacity}%</span>",
+    "interval": 5,
+    "format-charging": "BAT: [ {icon} ] <span size='12pt'>CHRG</span>",
+    "format-plugged": "BAT: [ {icon} ] <span size='12pt'>PLUG</span>",
+    "tooltip-format": "BATTERY: {power}W\nSTATUS: {timeTo}\nCYCLES: {cycles}\nHEALTH: {health}",
+    "format-icons": [
+      "<span color='#B7416E'>CRITICAL",
+      "<span color='#B7416E'>!!LOW!!!</span>",
+      "██░░░░░░",
+      "███░░░░░",
+      "████░░░░",
+      "█████░░░",
+      "██████░░",
+      "███████░",
+      "████████",
+    ],
   },
 
   "network": {
     "interface": "wlan0", // or your actual interface (use `ip link` to check)
-    "format": "    {essid}",
+    "format": " ",
+    "tooltip-format": "{essid}",
     "on-click": "~/.local/bin/wifi-menu",
   },
 
   "pulseaudio": {
-    "format": "   {volume}%",
-    "format-bluetooth": "󰂰   {volume}%",
-    "format-muted": "",
+    "format": "VOL: [ {icon} ] <span size='12pt'>{volume}%</span>",
+    "tooltip": true,
+    "tooltip-format": "DEVICE: {desc}",
+    "format-muted": "VOL: <span color='#B7416E'>[ !!MUTE!! ] <span size='12pt'>{volume}%</span></span>",
+    "on-click": "if [ $(pamixer --get-mute) == true ]; then pamixer --unmute; else pamixer --mute; fi",
+    "on-scroll-up": "pamixer -i 2",
+    "on-scroll-down": "pamixer -d 2",
+    "scroll-step": 2,
+    "reverse-scrolling": true,
+    "format-icons": [
+      "░░░░░░░░",
+      "█░░░░░░░",
+      "██░░░░░░",
+      "███░░░░░",
+      "████░░░░",
+      "█████░░░",
+      "██████░░",
+      "███████░",
+      "████████",
+    ],
   },
 }
