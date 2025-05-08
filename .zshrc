@@ -69,4 +69,5 @@ export VISUAL=nvim
 export EDITOR=nvim
 export TERM="tmux-256color"
 export GTK_THEME=Gruvbox-Dark
-export BROWSER="zen"
+export BROWSER="zen-browser"
+export MANPAGER="nvim +Man!"
