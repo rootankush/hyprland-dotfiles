@@ -2,7 +2,7 @@
 
 configuration {
   modes: "window,drun,run,ssh";
-  font: "JetBrainsMono NF 15";
+  font: "ShureTechMono Nerd Font 15";
   drun-display-format: "{name}";
 }
 

@@ -71,3 +71,8 @@ export TERM="tmux-256color"
 export GTK_THEME=Gruvbox-Dark
 export BROWSER="zen-browser"
 export MANPAGER="nvim +Man!"
+
+# Auto-start tmux if not already inside tmux
+if [ -z "$TMUX" ]; then
+  exec tmux
+fi
