@@ -25,6 +25,9 @@ alias rm="rm -i"
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 alias spicetifyfix="sudo chmod a+wr /opt/spotify /opt/spotify/Apps && spicetify apply"
 alias zshconfig="nvim .zshrc"
+alias em="emacs"
+alias df="dysk"
+
 
 #Aliases for ls
 # List all files including hidden ones
@@ -63,6 +66,9 @@ eval "$(zoxide init zsh)"
 catnap
 
 export PATH=$PATH:/home/ankush/.spicetify
+export PATH="$PATH:$HOME/.emacs.d/bin"
+export STARSHIP_CONFIG=/home/ankush/starship.toml
+
 
 # Enviroment  Variables
 export VISUAL=nvim
@@ -71,8 +77,8 @@ export TERM="tmux-256color"
 export GTK_THEME=Gruvbox-Dark
 export BROWSER="zen-browser"
 export MANPAGER="nvim +Man!"
-
+export DOOMDIR="$HOME/.config/doom"
 # Auto-start tmux if not already inside tmux
-if [ -z "$TMUX" ]; then
-  exec tmux
-fi
+#if [ -z "$TMUX" ]; then
+#  exec tmux
+#fi
