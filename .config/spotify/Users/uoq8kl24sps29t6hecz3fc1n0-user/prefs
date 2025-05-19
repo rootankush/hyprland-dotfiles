@@ -1,3 +1,3 @@
-connect.mdns_devices="[]"
-connect.dial_devices="[{\"address\":\"192.168.1.53\",\"app_state\":\"MISSING\",\"created_timestamp\":1747322010,\"device_id\":\"4D454930-0200-1000-8001-D8AFF191738D\",\"dial_location_url\":\"http://192.168.1.53:55000/nrc/ddd.xml\",\"display_name\":\"43ES630_Series\",\"last_seen\":1747323149,\"manufacturer\":\"Panasonic\",\"model_name\":\"Panasonic VIErA\",\"product_cap\":\"\",\"public_ip\":\"103.165.169.11\",\"wol\":{\"all_interfaces\":false,\"delay_ms\":250,\"mac\":\"2824ffbec8ae\",\"port\":9,\"retries\":160}}]"
 audio.play_bitrate_non_metered_migrated=true
+connect.dial_devices="[{\"address\":\"192.168.1.53\",\"app_state\":\"MISSING\",\"created_timestamp\":1747487169,\"device_id\":\"4D454930-0200-1000-8001-D8AFF191738D\",\"dial_location_url\":\"http://192.168.1.53:55000/nrc/ddd.xml\",\"display_name\":\"43ES630_Series\",\"last_seen\":1747493153,\"manufacturer\":\"Panasonic\",\"model_name\":\"Panasonic VIErA\",\"product_cap\":\"\",\"public_ip\":\"103.165.169.11\",\"wol\":{\"all_interfaces\":false,\"delay_ms\":250,\"mac\":\"2824ffbec8ae\",\"port\":9,\"retries\":160}}]"
+connect.mdns_devices="[]"

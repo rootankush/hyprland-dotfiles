@@ -51,4 +51,4 @@
 (package! doom-themes)
 (package! lsp-ui)
 (package! prettier-js)
-
+(package! evil-tutor)

@@ -28,7 +28,6 @@ alias zshconfig="nvim .zshrc"
 alias em="emacs"
 alias df="dysk"
 
-
 #Aliases for ls
 # List all files including hidden ones
 alias ls='eza -a'
@@ -63,11 +62,11 @@ alias gr='git restore'
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-catnap
 
 export PATH=$PATH:/home/ankush/.spicetify
 export PATH="$PATH:$HOME/.emacs.d/bin"
 export STARSHIP_CONFIG=/home/ankush/starship.toml
+export PATH="$HOME/.cargo/bin:$PATH"
 
 
 # Enviroment  Variables

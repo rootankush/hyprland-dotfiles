@@ -43,7 +43,8 @@ font = "slant"
 margin = 0
 
 [misc.imageMode] # Requires Viu.
-enable = false
-path = "/home/ankush/.wallpaper/9f795d70-27a7-4908-8d1d-0c39e1c58ca2.png" # Please only use absolute paths.
+ascii = false
+enable = true
+path = "/home/ankush/Download/crop.jpg" # Please only use absolute paths.
 scale = 18
 margin = [2, 2, 3]
