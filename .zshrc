@@ -68,7 +68,6 @@ export PATH="$PATH:$HOME/.emacs.d/bin"
 export STARSHIP_CONFIG=/home/ankush/starship.toml
 export PATH="$HOME/.cargo/bin:$PATH"
 
-
 # Enviroment  Variables
 export VISUAL=nvim
 export EDITOR=nvim
@@ -81,3 +80,6 @@ export DOOMDIR="$HOME/.config/doom"
 #if [ -z "$TMUX" ]; then
 #  exec tmux
 #fi
+
+# Created by `pipx` on 2025-05-19 17:09:13
+export PATH="$PATH:/home/ankush/.local/bin"
