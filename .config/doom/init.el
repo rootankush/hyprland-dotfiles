@@ -99,7 +99,7 @@
        (eval +overlay)     ; run code, run (also, repls)
        (lookup +docsets)             ; navigate your code and its documentation
        ;;llm               ; when I said you needed friends, I didn't mean...
-       ;;lsp               ; M-x vscode
+       lsp               ; M-x vscode
        magit             ; a git porcelain for Emacs
        ;;make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
@@ -116,7 +116,7 @@
        :lang
        ;;agda              ; types of types of types of types...
        ;;beancount         ; mind the GAAP
-       (cc +lsp +tree-sitter)         ; C > C++ == 1
+       (cc +lsp +treesitter)         ; C > C++ == 1
        ;;clojure           ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
        ;;coq               ; proofs-as-programs
@@ -127,7 +127,7 @@
        ;;dhall
        ;;elixir            ; erlang done right
        ;;elm               ; care for a cup of TEA?
-       emacs-lisp        ; drown in parentheses
+       (emacs-lisp +lsp +treesitter)        ; drown in parentheses
        ;;erlang            ; an elegant language for a more civilized age
        ;;ess               ; emacs speaks statistics
        ;;factor
@@ -141,10 +141,10 @@
        ;;(haskell +lsp)    ; a language that's lazier than I am
        ;;hy                ; readability of scheme w/ speed of python
        ;;idris             ; a language you can depend on
-       (json +lsp)              ; At least it ain't XML
+       (json +lsp +treesitter)              ; At least it ain't XML
        ;;janet             ; Fun fact: Janet is me!
        ;;(java +lsp)       ; the poster child for carpal tunnel syndrome
-       (javascript +lsp)        ; all(hope(abandon(ye(who(enter(here))))))
+       (javascript +lsp +treesitter)        ; all(hope(abandon(ye(who(enter(here))))))
        ;;julia             ; a better, faster MATLAB
        ;;kotlin            ; a better, slicker Java(Script)
        ;;latex             ; writing papers in Emacs has never been so fun
@@ -170,7 +170,7 @@
        ;;(rust +lsp)       ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
        ;;(scheme +guile)   ; a fully conniving family of lisps
-       (typescript +lsp)   ;Typescript support
+       (typescript +lsp +treesitter)   ;Typescript support
        sh                ; she sells {ba,z,fi}sh shells on the C xor
        ;;sml
        ;;solidity          ; do you need a blockchain? No.

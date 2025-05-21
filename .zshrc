@@ -25,7 +25,7 @@ alias rm="rm -i"
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 alias spicetifyfix="sudo chmod a+wr /opt/spotify /opt/spotify/Apps && spicetify apply"
 alias zshconfig="nvim .zshrc"
-alias em="emacs"
+alias em="emacsclient -c -a emacs"
 alias df="dysk"
 
 #Aliases for ls
@@ -70,7 +70,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 # Enviroment  Variables
 export VISUAL=nvim
-export EDITOR=nvim
+export EDITOR="emacsclient -c -a emacs"
 export TERM="tmux-256color"
 export GTK_THEME=Gruvbox-Dark
 export BROWSER="zen-browser"
