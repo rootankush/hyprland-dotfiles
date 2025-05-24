@@ -52,7 +52,6 @@
 (package! lsp-ui)
 (package! prettier-js)
 (package! evil-tutor)
-(package! emmet-mode)
 (package! web-mode)
 
 ;; Evil Packages

@@ -87,13 +87,6 @@
 (global-set-key (kbd "C-x") 'kill-region)
 (global-set-key (kbd "C-y") 'yank)
 
-(map! :leader
-      :desc "Compile and run C file"
-      "m r" (lambda ()
-              (interactive)
-              (let ((filename (file-name-base buffer-file-name)))
-                (vterm)
-                (vterm-send-string (format "gcc -o %s %s && ./%s\n" filename buffer-file-name filename)))))
 ;; Enable Prettier in web-mode
 (after! web-mode
 	(add-hook 'web-made-hook 'prettier-js-mode))

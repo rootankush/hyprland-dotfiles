@@ -25,7 +25,7 @@ alias rm="rm -i"
 alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 alias spicetifyfix="sudo chmod a+wr /opt/spotify /opt/spotify/Apps && spicetify apply"
 alias zshconfig="nvim .zshrc"
-alias em="emacsclient -c -a emacs"
+alias em="emacsclient -c"
 alias df="dysk"
 
 #Aliases for ls
