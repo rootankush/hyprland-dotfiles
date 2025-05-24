@@ -97,3 +97,9 @@
 ;; Enable Prettier in web-mode
 (after! web-mode
 	(add-hook 'web-made-hook 'prettier-js-mode))
+
+;; Org Mode
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(setq org-directory "~/org/")
+(setq org-agenda-files '("~/org/"))
+(setq org-roam-directory "~/org/roam")

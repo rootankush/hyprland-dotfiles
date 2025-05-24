@@ -67,6 +67,8 @@ export PATH=$PATH:/home/ankush/.spicetify
 export PATH="$PATH:$HOME/.emacs.d/bin"
 export STARSHIP_CONFIG=/home/ankush/starship.toml
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:/home/ankush/.npm-global/bin"
+
 
 # Enviroment  Variables
 export VISUAL=nvim
@@ -83,3 +85,9 @@ export DOOMDIR="$HOME/.config/doom"
 
 # Created by `pipx` on 2025-05-19 17:09:13
 export PATH="$PATH:/home/ankush/.local/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
