@@ -27,6 +27,8 @@ alias spicetifyfix="sudo chmod a+wr /opt/spotify /opt/spotify/Apps && spicetify 
 alias zshconfig="nvim .zshrc"
 alias em="emacsclient -c"
 alias df="dysk"
+alias syncon="systemctl --user enable syncthing && systemctl --user start syncthing"
+alias syncoff="systemctl --user disable syncthing && systemctl --user stop syncthing"
 
 #Aliases for ls
 # List all files including hidden ones
@@ -90,4 +92,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+/home/ankush/color-scripts/color-scripts/pacman
 

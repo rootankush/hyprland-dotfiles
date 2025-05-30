@@ -22,9 +22,9 @@
 ;; accept. For example:
 ;;
 (setq 
-  doom-font (font-spec :family "ShureTechMono Nerd Font" :size 20)
-  doom-big-font (font-spec :family "ShureTechMono Nerd Font" :size 36)
-  doom-variable-pitch-font (font-spec :family "ShureTechMono Nerd Font" :size 18))
+ doom-font (font-spec :family "ShureTechMono Nerd Font" :size 20)
+ doom-big-font (font-spec :family "ShureTechMono Nerd Font" :size 36)
+ doom-variable-pitch-font (font-spec :family "ShureTechMono Nerd Font" :size 18))
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
 ;; refresh your font settings. If Emacs still can't find your font, it likely
@@ -34,7 +34,6 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-gruvbox)
-
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
@@ -89,10 +88,17 @@
 
 ;; Enable Prettier in web-mode
 (after! web-mode
-	(add-hook 'web-made-hook 'prettier-js-mode))
+  (add-hook 'web-made-hook 'prettier-js-mode))
 
 ;; Org Mode
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (setq org-directory "~/org/")
 (setq org-agenda-files '("~/org/"))
 (setq org-roam-directory "~/org/roam")
+
+;; Rainbow mode for hex colors
+(add-hook 'css-mode-hook #'rainbow-mode)
+
+;; Enable it
+(after! css-mode
+  (add-hook 'css-mode-hook #'apheleia-mode))

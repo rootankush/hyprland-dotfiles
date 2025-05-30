@@ -53,9 +53,12 @@
 (package! prettier-js)
 (package! evil-tutor)
 (package! web-mode)
-
+(package! rainbow-mode)
+(package! apheleia)
 ;; Evil Packages
 (package! evil-commentary)
 (package! undo-tree)
+(package! evil-snipe)
+(package! avy)
 
 ;; Org Mode Packages
