@@ -26,7 +26,6 @@ alias battery="upower -i /org/freedesktop/UPower/devices/battery_BAT0"
 alias spicetifyfix="sudo chmod a+wr /opt/spotify /opt/spotify/Apps && spicetify apply"
 alias zshconfig="nvim .zshrc"
 alias em="emacsclient -c"
-alias df="dysk"
 alias syncon="systemctl --user enable syncthing && systemctl --user start syncthing"
 alias syncoff="systemctl --user disable syncthing && systemctl --user stop syncthing"
 
@@ -55,7 +54,7 @@ alias gcm='git commit -m'
 alias gs='git status'
 alias gb='git branch'
 alias gp='git push'
-alias gpl='git pull'
+alias gpl='git pull --rebase'
 alias gcl='git clone'
 alias gr='git restore'
 

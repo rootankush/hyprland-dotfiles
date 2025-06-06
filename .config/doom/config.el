@@ -6,8 +6,8 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
-;; (setq user-full-name "John Doe"
-;;       user-mail-address "john@doe.com")
+(setq user-full-name "Ankush Pradhan"
+      user-mail-address "arun1972.pradhan@gmail.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -102,3 +102,6 @@
 ;; Enable it
 (after! css-mode
   (add-hook 'css-mode-hook #'apheleia-mode))
+
+(after! persp-mode
+  (setq persp-emacsclient-init-frame-behaviour-override 'main))

@@ -60,5 +60,4 @@
 (package! undo-tree)
 (package! evil-snipe)
 (package! avy)
-
 ;; Org Mode Packages
