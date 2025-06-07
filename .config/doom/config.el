@@ -103,5 +103,5 @@
 (after! css-mode
   (add-hook 'css-mode-hook #'apheleia-mode))
 
-(after! persp-mode
-  (setq persp-emacsclient-init-frame-behaviour-override 'main))
+;;(after! persp-mode
+;;  (setq persp-emacsclient-init-frame-behaviour-override 'main))
