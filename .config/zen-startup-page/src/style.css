@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "SpaceMono Nerd Font";
+    font-display: swap;
+    src:
+        local("SpaceMono Nerd Font"),
+        url(/assets/fonts/SpaceMonoNF.woff) format("woff"),
+        url(/assets/fonts/SpaceMonoNF.woff2) format("woff2");
+}
+
+:root {
+    --text-color: #ebdbb2;
+    --hover-color: #fabd2f;
+    --accent-color: #458588;
+    --accent-color-2: #d65d0e;
+    --background-color: #282828;
+}
+
+html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    background-color: var(--background-color);
+    background-image: url("./bgs/topography.svg");
+    overflow-x: clip;
+}
+
+body {
+    display: flex;
+    color: var(--text-color);
+    font-family: SpaceMono Nerd Font, monospace;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-text-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#image21 ,
+#image11 {
+  height: 550px;
+  aspect-ratio: 12 / 16;
+  border-radius: 6px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.2s;
+}
+
+#image11:hover,
+#image21:hover {
+  transform: scale(1.05);
+}
+
+.search-box {
+    border: 5px dashed #928374;
+    position: fixed;
+    top: 90px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    text-align: top;
+}
+
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ebdbb2;
+    width: 90%;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#greeting {
+    color: var(--accent-color-2);
+    font-size: 2.5rem;
+    font-weight: 900;
+    grid-column: 30/-30;
+    text-align: center;
+    display: grid;
+}
+
+#date {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: var(--accent-color);
+  display: grid;
+  grid-column: 1/-1;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.header {
+  color: var(--accent-color);
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+#links {
+  display: grid;
+  grid-row-gap: 0.5em;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 1em;
+    margin-left: 0;
+}
+
+a {
+    color: var(--text-color);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover-color);
+    font-style: italic;
+}
+
+#image2 {
+    margin-left: 4.5em;
+}
+
+#image1 {
+    margin-right: 5em;
+}
