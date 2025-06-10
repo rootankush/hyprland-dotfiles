@@ -1,9 +1,21 @@
 function handleSearch() {
-  const input = document.getElementById("seachInput").value.trim();
-  if (input.lenght > 0) {
+  const input = document.getElementById("searchInput").value.trim();
+  if (input.length > 0) {
     const url = "https://duckduckgo.com/?q=" + encodeURIComponent(input);
     window.location.href = url;
+  } else {
+    alert("Please enter a search query.");
+  }
 }
-document.getElementById("searchInput").addEventListener("keydown", function (e) {
-if (e.key === "Enter") handleSearch();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("searchInput");
+  if (searchInput) {
+    searchInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        handleSearch();
+      }
+    });
+  }
 });
