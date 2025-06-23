@@ -63,44 +63,6 @@ alias gr='git restore'
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CONFIG_HOME="$HOME/.config"
-export PATH=$PATH:/home/ankush/.spicetify
-export PATH="$PATH:$HOME/.emacs.d/bin"
-export STARSHIP_CONFIG=/home/ankush/starship.toml
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$PATH:/home/ankush/.config/npm/.npm-global/bin"
-
-
-# Enviroment  Variables
-export VISUAL=nvim
-export EDITOR="emacsclient -c -a emacs"
-export TERM="tmux-256color"
-export GTK_THEME=Gruvbox-Dark
-export BROWSER="zen-browser"
-export MANPAGER="nvim +Man!"
-export DOOMDIR="$HOME/.config/doom"
-export GNUPGHOME="~/.config/gnupg"
-export NPM_CONFIG_USERCONFIG="~/.config/npm/.npmrc" 
-export WGETRC="~/.config/wget/wgetrc" 
-export WINEPREFIX="$XDG_DATA_HOME/wine"
-export CARGO_HOME="$XDG_DATA_HOME/cargo" 
-export GOPATH="$XDG_DATA_HOME/go"
-export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
-export NIMBLE_DIR="$XDG_DATA_HOME/nimble"
-export NVM_DIR="$XDG_DATA_HOME/nvm"
-export PARALLEL_HOME="$XDG_CONFIG_HOME/parallel" 
-export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
-export W3M_DIR="$XDG_DATA_HOME/w3m"
-# Auto-start tmux if not already inside tmux
-#if [ -z "$TMUX" ]; then
-#  exec tmux
-#fi
-
-# Created by `pipx` on 2025-05-19 17:09:13
-export PATH="$PATH:/home/ankush/.local/bin"
-
-export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
