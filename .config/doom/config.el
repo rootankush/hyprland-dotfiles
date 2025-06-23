@@ -75,7 +75,7 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-(setq +doom-dashboard-banner-file "~/.config/doom/vagabond.png")
+(setq +doom-dashboard-banner-file "~/.config/doom/catplay.png")
 (setq +doom-dashboard-banner-padding '(2 . 2)) ;top and bottom padding
 
 ;; Enable clipboard intergration
@@ -106,3 +106,6 @@
 
 ;;(after! persp-mode
 ;;  (setq persp-emacsclient-init-frame-behaviour-override 'main))
+
+;; Transparency
+(add-to-list 'default-frame-alist '(alpha-background . 80))

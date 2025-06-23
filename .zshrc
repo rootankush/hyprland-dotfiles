@@ -81,5 +81,5 @@ export STARSHIP_CONFIG="$HOME/starship.toml"
 # ======================
 # 🎨 Login Visual
 # ======================
-"$HOME/color-scripts/color-scripts/pacman"
+"$HOME/color-scripts/color-scripts/crunchbang-mini"
 
