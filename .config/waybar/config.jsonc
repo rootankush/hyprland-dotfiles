@@ -17,20 +17,20 @@
     "format-icons": {
       "active": "",
       "default": "",
+      },
     },
-  },
 
   "clock": {
     "tooltip-format": "{:%A, %B %d, %Y}",
     "format": "  {:%I:%M %p}",
     "interval": 60,
-  },
+    },
 
   "battery": {
     "states": {
       "warning": 20,
       "critical": 15,
-    },
+      },
     "format": "BAT: [ {icon} ] <span size='12pt'>{capacity}%</span>",
     "interval": 5,
     "format-charging": "BAT: [ {icon} ] <span size='12pt'>CHRG</span>",
@@ -48,15 +48,15 @@
       "████████░░",
       "█████████░",
       "██████████",
-    ],
-  },
+      ],
+    },
 
   "network": {
     "interface": "wlan0", // or your actual interface (use `ip link` to check)
     "format": " ",
     "tooltip-format": "{essid}",
     "on-click": "~/.local/bin/wifi-menu",
-  },
+    },
 
   "pulseaudio": {
     "format": "VOL: [ {icon} ] <span size='12pt'>{volume}%</span>",
@@ -79,6 +79,6 @@
       "████████░░",
       "█████████░",
       "██████████",
-    ],
-  },
-}
+      ],
+    },
+  }
