@@ -25,15 +25,16 @@
 ```
 
 ## ScreenShots
+![screenshot-desktop](/dotfiles/images/screenshot-desktop.png)
 
 ### Terminal (foot)
-![2025-05-06-155628_hyprshot](https://github.com/user-attachments/assets/79261178-27bd-443b-be88-3601b4624ef5)
+![screenshot-terminal](/dotfiles/images/screenshot-terminal.png)
 
 ### Menu (Rofi)
-![2025-05-06-155636_hyprshot](https://github.com/user-attachments/assets/93de5e30-3cbb-4daf-ad6a-aef4e2af9ccc)
+![screenshot-dmenu](/dotfiles/images/screenshot-dmenu.png)
 
 ### Status Bar (Waybar)
-![2025-05-06-155618_hyprshot](https://github.com/user-attachments/assets/d330bd8a-f11d-4fb5-b9ce-1309829c423e)
+![screenshot-waybar](/dotfiles/images/screenshot-waybar.png)
 
 ## Requirements
 
