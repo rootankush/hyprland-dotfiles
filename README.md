@@ -25,16 +25,16 @@
 ```
 
 ## ScreenShots
-![screenshot-desktop](/dotfiles/images/screenshot-desktop.png)
+![screenshot-desktop](./images/screenshot-desktop.png)
 
 ### Terminal (foot)
-![screenshot-terminal](/dotfiles/images/screenshot-terminal.png)
+![screenshot-terminal](./images/screenshot-terminal.png)
 
 ### Menu (Rofi)
-![screenshot-dmenu](/dotfiles/images/screenshot-dmenu.png)
+![screenshot-dmenu](./images/screenshot-dmenu.png)
 
 ### Status Bar (Waybar)
-![screenshot-waybar](/dotfiles/images/screenshot-waybar.png)
+![screenshot-waybar](./images/screenshot-waybar.png)
 
 ## Requirements
 
