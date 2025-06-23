@@ -15,11 +15,11 @@
 
     > GTK: Gruvbox
 
-    > Font: Fira Mono Nerd Fonts
+    > Font: ShareTech Mono Nerd Fonts
 
     > Terminal: Foot
 
-    > TextEditor: Neovim
+    > TextEditor: Neovim && Doom Emacs
 
     > File manager: nnn
 ```
