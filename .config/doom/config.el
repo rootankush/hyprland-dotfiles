@@ -35,6 +35,10 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-gruvbox)
 
+;;Transparency
+(add-to-list 'default-frame-alist '(alpha-background . 80))
+
+
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
@@ -107,5 +111,3 @@
 ;;(after! persp-mode
 ;;  (setq persp-emacsclient-init-frame-behaviour-override 'main))
 
-;; Transparency
-(add-to-list 'default-frame-alist '(alpha-background . 80))

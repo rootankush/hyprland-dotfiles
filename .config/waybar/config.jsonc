@@ -7,8 +7,8 @@
   "margin-bottom": 0,
   "margin-left": 23,
   "border-radius": 2,
-  "modules-left": ["clock", "hyprland/workspaces"],
-  "modules-center": [],
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
   "modules-right": ["pulseaudio", "battery", "network"],
 
   "hyprland/workspaces": {
@@ -21,10 +21,11 @@
     },
 
   "clock": {
-    "tooltip-format": "{:%A, %B %d, %Y}",
-    "format": "  {:%I:%M %p}",
-    "interval": 60,
-    },
+        "interval": 60,
+        "format": "{:%B | %a %d, %Y | %I:%M %p}",// AM PM format
+        "format-alt": "{:%a %b %d, %G}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+           },
 
   "battery": {
     "states": {
