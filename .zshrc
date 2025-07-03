@@ -35,6 +35,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias em="emacsclient -c"
 alias syncon="systemctl --user enable syncthing && systemctl --user start syncthing"
 alias syncoff="systemctl --user disable syncthing && systemctl --user stop syncthing"
+alias restartdoom="emacsclient -e '(kill-emacs)' && emacs --daemon"
 
 # ======================
 # 📁 LS Aliases (eza)

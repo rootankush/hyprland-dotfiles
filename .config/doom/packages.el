@@ -61,3 +61,6 @@
 (package! evil-snipe)
 (package! avy)
 ;; Org Mode Packages
+(package! org-superstar)
+(package! org-modern)
+(package! org-roam-ui)

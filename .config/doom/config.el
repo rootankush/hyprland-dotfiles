@@ -22,7 +22,7 @@
 ;; accept. For example:
 ;;
 (setq 
- doom-font (font-spec :family "ShureTechMono Nerd Font" :size 20)
+ doom-font (font-spec :family "ShureTechMono Nerd Font" :size 24)
  doom-big-font (font-spec :family "ShureTechMono Nerd Font" :size 36)
  doom-variable-pitch-font (font-spec :family "ShureTechMono Nerd Font" :size 18))
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
@@ -36,17 +36,12 @@
 (setq doom-theme 'doom-gruvbox)
 
 ;;Transparency
-(add-to-list 'default-frame-alist '(alpha-background . 80))
+;; (add-to-list 'default-frame-alist '(alpha-background . 90))
 
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
-
-;; If you use `org' and don't want your org files in the default location below,
-;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/org/")
-
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
@@ -96,10 +91,34 @@
   (add-hook 'web-made-hook 'prettier-js-mode))
 
 ;; Org Mode
-(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (setq org-directory "~/org/")
-(setq org-agenda-files '("~/org/"))
-(setq org-roam-directory "~/org/roam")
+(setq org-agenda-files '("~/org/agenda.org" "~/org/tasks.org"))
+(setq org-default-notes-file "~/org/notes.org")
+
+(after! org-roam
+  (setq org-roam-directory "~/org/roam/")
+  (setq org-roam-dailies-directory "~/org/roam/daily"))
+
+(after! org
+  (setq org-startup-folded t) ;; Start with folded headings
+  (setq org-startup-indented t) ;; Enable visual indentation
+  (setq org-log-done 'time) ;; Log time when tasks are marked DONE
+  (setq org-agenda-start-with-log-mode t) ;; Show agenda log by default
+  (use-package! org-superstar
+    :hook (org-mode . org-superstar-mode)
+    :config
+    (setq org-superstar-headline-bullets-list '("◉" "○" "✸" "✿")
+          org-superstar-item-bullet-alist '((?* . ?•)
+                                            (?+ . ?➤)
+                                            (?- . ?–))
+          org-superstar-prettify-item-bullets t
+          org-superstar-remove-leading-stars nil))
+  )
+
+(after! org-journal
+  (setq org-journal-dir "~/org/journal/")
+  (setq org-journal-file-format "%Y-%m-%d.org")
+  (setq org-journal-date-format "%A, %d %B %Y"))
 
 ;; Rainbow mode for hex colors
 (add-hook 'css-mode-hook #'rainbow-mode)
@@ -108,6 +127,18 @@
 (after! css-mode
   (add-hook 'css-mode-hook #'apheleia-mode))
 
-;;(after! persp-mode
-;;  (setq persp-emacsclient-init-frame-behaviour-override 'main))
+;; Rust settings
+(after! rustic
+  ;; Use rust-analyzer
+  (setq rustic-lsp-client 'lsp)
 
+  ;; Auto format on save
+  (setq rustic-format-on-save t)
+
+  ;; Cargo run shortcut
+  (map! :localleader
+        :map rustic-mode-map
+        "r" #'rustic-cargo-run
+        "t" #'rustic-cargo-test
+        "b" #'rustic-cargo-build
+        "c" #'rustic-cargo-check))
