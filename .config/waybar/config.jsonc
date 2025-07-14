@@ -2,11 +2,11 @@
   "layer": "top",
   "position": "top",
   "height": 40,
-  "margin-top": 20,
-  "margin-right": 23,
-  "margin-bottom": 0,
-  "margin-left": 23,
-  "border-radius": 2,
+  // "margin-top": 18,
+  // "margin-right": 18,
+  // "margin-bottom": 0,
+  // "margin-left": 18,
+  "border-radius": 0,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
   "modules-right": ["pulseaudio", "battery", "network"],
@@ -17,8 +17,8 @@
     "format-icons": {
       "active": "",
       "default": "",
+        },
       },
-    },
 
   "clock": {
         "interval": 60,

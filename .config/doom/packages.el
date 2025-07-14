@@ -50,11 +50,10 @@
 
 (package! doom-themes)
 (package! lsp-ui)
-(package! prettier-js)
-(package! evil-tutor)
 (package! web-mode)
 (package! rainbow-mode)
 (package! apheleia)
+(package! prettier-js)
 ;; Evil Packages
 (package! evil-commentary)
 (package! undo-tree)
@@ -64,3 +63,5 @@
 (package! org-superstar)
 (package! org-modern)
 (package! org-roam-ui)
+(package! org-download)
+(package! openwith)

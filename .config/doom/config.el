@@ -22,7 +22,7 @@
 ;; accept. For example:
 ;;
 (setq 
- doom-font (font-spec :family "ShureTechMono Nerd Font" :size 24)
+ doom-font (font-spec :family "ShureTechMono Nerd Font" :size 22)
  doom-big-font (font-spec :family "ShureTechMono Nerd Font" :size 36)
  doom-variable-pitch-font (font-spec :family "ShureTechMono Nerd Font" :size 18))
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
@@ -35,10 +35,7 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-gruvbox)
 
-;;Transparency
-;; (add-to-list 'default-frame-alist '(alpha-background . 90))
-
-
+(add-to-list 'default-frame-alist '(alpha-background . 75))
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
@@ -93,7 +90,6 @@
 ;; Org Mode
 (setq org-directory "~/org/")
 (setq org-agenda-files '("~/org/agenda.org" "~/org/tasks.org"))
-(setq org-default-notes-file "~/org/notes.org")
 
 (after! org-roam
   (setq org-roam-directory "~/org/roam/")
@@ -126,6 +122,10 @@
 ;; Enable it
 (after! css-mode
   (add-hook 'css-mode-hook #'apheleia-mode))
+
+(setq-hook! 'js-mode-hook +format-with-lsp nil)
+(setq-hook! 'js-mode-hook +format-with :none)
+(add-hook 'js-mode-hook 'prettier-js-mode)
 
 ;; Rust settings
 (after! rustic
