@@ -4,7 +4,8 @@
 }
 
 window#waybar {
-  background: #282828; /* charcoal translucent */
+  /* background: #1A1814; */
+  background: #282828;
   color: #a9a9a9; /* cloud beige */
   padding: 4px 10px;
   margin: 10px 20px 0 20px;
