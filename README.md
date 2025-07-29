@@ -1,4 +1,6 @@
+<p align="center">
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Shure+Tech+Mono&weight=600&size=35&duration=2000&pause=2000&color=FFFFFF&center=true&vCenter=true&width=435&lines=rootankush+Dotfiles)](https://git.io/typing-svg)
+</p>
 ## Details
 
 ```
