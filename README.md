@@ -32,9 +32,6 @@
 ### Menu (Rofi)
 ![screenshot-dmenu](./images/screenshot-dmenu.png)
 
-### Status Bar (Waybar)
-![screenshot-waybar](./images/screenshot-waybar.png)
-
 ## Requirements
 
 Ensure you have the following installed on your system
