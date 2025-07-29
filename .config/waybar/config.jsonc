@@ -16,21 +16,21 @@
     "format": "{icon}",
     "format-icons": {
       "active": " ",
-      "default": " ",
-        },
+      "default": " "
+        }
       },
 
   "clock": {
         "interval": 60,
         "format": "[ {:%B | %a %d, %Y | %I:%M %p} ]",// AM PM format
         "format-alt": "[ {:%a %b %d, %G} ]",
-        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
            },
 
   "battery": {
     "states": {
       "warning": 20,
-      "critical": 15,
+      "critical": 15
       },
     "format": "BAT: [ {icon} ] <span size='12pt'>{capacity}%</span>",
     "interval": 5,
@@ -48,15 +48,15 @@
       "███████░░░",
       "████████░░",
       "█████████░",
-      "██████████",
-      ],
+      "██████████"
+      ]
     },
 
   "network": {
     "interface": "wlan0", // or your actual interface (use `ip link` to check)
     "format": "[   ]",
     "tooltip-format": "{essid}",
-    "on-click": "~/.local/bin/wifi-menu",
+    "on-click": "~/.local/bin/wifi-menu"
     },
 
   "pulseaudio": {
@@ -79,7 +79,7 @@
       "███████░░░",
       "████████░░",
       "█████████░",
-      "██████████",
-      ],
-    },
+      "██████████"
+      ]
+    }
   }
