@@ -1,4 +1,4 @@
-# My Hyprland Dotfiles
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Shure+Tech+Mono&pause=1000&color=FFFFFF&width=435&lines=rootankush+Dotfiles)](https://git.io/typing-svg)
 
 ## Details
 

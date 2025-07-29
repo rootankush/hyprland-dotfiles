@@ -15,15 +15,15 @@
     "show-special": true,
     "format": "{icon}",
     "format-icons": {
-      "active": "",
-      "default": "",
+      "active": " ",
+      "default": " ",
         },
       },
 
   "clock": {
         "interval": 60,
-        "format": "{:%B | %a %d, %Y | %I:%M %p}",// AM PM format
-        "format-alt": "{:%a %b %d, %G}",
+        "format": "[ {:%B | %a %d, %Y | %I:%M %p} ]",// AM PM format
+        "format-alt": "[ {:%a %b %d, %G} ]",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
            },
 
@@ -54,7 +54,7 @@
 
   "network": {
     "interface": "wlan0", // or your actual interface (use `ip link` to check)
-    "format": " ",
+    "format": "[   ]",
     "tooltip-format": "{essid}",
     "on-click": "~/.local/bin/wifi-menu",
     },

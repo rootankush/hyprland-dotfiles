@@ -11,6 +11,7 @@ $python\
 $character"""
 
 [directory]
+format = "[$path]($style) "
 style = "blue"
 
 [character]
