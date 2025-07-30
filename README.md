@@ -16,7 +16,7 @@
 
     > Font: ShareTech Mono Nerd Fonts
 
-    > Terminal: Foot
+    > Terminal: Foot && Kitty
 
     > TextEditor: Neovim && Doom Emacs
 
