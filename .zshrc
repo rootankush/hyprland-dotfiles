@@ -85,3 +85,7 @@ export STARSHIP_CONFIG="$HOME/starship.toml"
 # "$HOME/color-scripts/color-scripts/crunchbang-mini"
 fastfetch
 
+# ======================
+# Z-Profile
+# ======================
+[[ -f ~/.zprofile ]] && source ~/.zprofile

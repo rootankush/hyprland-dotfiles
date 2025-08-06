@@ -83,10 +83,6 @@
 (global-set-key (kbd "C-x") 'kill-region)
 (global-set-key (kbd "C-y") 'yank)
 
-;; Enable Prettier in web-mode
-(after! web-mode
-  (add-hook 'web-made-hook 'prettier-js-mode))
-
 ;; Org Mode
 (setq org-directory "~/org/")
 (setq org-agenda-files '("~/org/agenda.org" "~/org/tasks.org"))
@@ -123,10 +119,6 @@
 (after! css-mode
   (add-hook 'css-mode-hook #'apheleia-mode))
 
-(setq-hook! 'js-mode-hook +format-with-lsp nil)
-(setq-hook! 'js-mode-hook +format-with :none)
-(add-hook 'js-mode-hook 'prettier-js-mode)
-
 ;; Rust settings
 (after! rustic
   ;; Use rust-analyzer
@@ -142,3 +134,13 @@
         "t" #'rustic-cargo-test
         "b" #'rustic-cargo-build
         "c" #'rustic-cargo-check))
+
+(after! dap-mode
+  (require 'dap-node)
+  (dap-register-debug-template
+   "Node.js Run Configuration"
+   (list :type "node"
+         :request "launch"
+         :name "Node.js::Run"
+         :program "${workspaceFolder}/${file}"
+         :cwd "${workspaceFolder}")))
