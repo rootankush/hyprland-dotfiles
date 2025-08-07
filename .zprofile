@@ -8,7 +8,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export STARSHIP_CONFIG="$HOME/starship.toml"
 
 # PATH Setup
-export PATH="$PATH:$HOME/.emacs.d/bin"
+export PATH="$PATH:$HOME/.config/emacs/bin/"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:$HOME/.config/npm/.npm-global/bin"
 
@@ -24,7 +24,6 @@ export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 # Programs
 export BROWSER="zen-browser"
 export MANPAGER="nvim +Man!"
-export DOOMDIR="$HOME/.config/doom"
 
 # App Configs
 export GNUPGHOME="$HOME/.config/gnupg"
