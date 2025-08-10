@@ -76,7 +76,6 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-(setq +doom-dashboard-banner-padding '(2 . 2))
 
 ;; Prettier
 (use-package! prettier
@@ -100,3 +99,52 @@
   (add-to-list 'completion-at-point-functions #'cape-keyword)
   :config
   (setq cape-dabbrev-min-length  3))
+
+;; Dap-Mode
+;; (after! dap-mode
+;;   ;; Enable DAP UI
+;;   (dap-ui-mode)
+;;   (dap-ui-controls-mode)
+
+;;   ;; For JavaScript/TypeScript debugging (Node.js)
+;;   (setq dap-js-debug-path "/path/to/vscode-js-debug"
+;;         dap-js-debug-program `("node" ,(expand-file-name "dist/src/dapDebugServer.js" dap-js-debug-path)))
+;;   (require 'dap-node)
+;;   (require 'dap-chrome)
+;;   (dap-node-setup) ;; Downloads the VSCode node-debug2 adapter
+
+;;   ;; Debug configuration for your project
+;;   (dap-register-debug-template
+;;    "Node: Launch Program"
+;;    (list :type "node"
+;;          :request "launch"
+;;          :name "Launch Node App"
+;;          :program "${workspaceFolder}/main.js" ;; Change to your entry file
+;;          :cwd "${workspaceFolder}"))
+;;   (dap-register-debug-template
+;;    "Chrome: Launch"
+;;    (list :type "chrome"
+;;          :request "launch"
+;;          :name "Launch Chrome"
+;;          :url "http://127.0.0.1:8080/"
+;;          :webRoot "${workspaceFolder}"
+;;          :runtimeExecutable "/usr/bin/google-chrome-stable")))
+
+;; Ensure dap-mode is loaded
+(after! dap-mode
+  (dap-ui-mode 1)
+  (dap-ui-controls-mode 1)
+  (dap-tooltip-mode 1)
+  (setq dap-js-debug-path (expand-file-name "~/.npm-global/lib/js-debug")
+        dap-js-debug-program `("node" ,(expand-file-name "dist/src/dapDebugServer.js" dap-js-debug-path)))
+  (require 'dap-node)
+  (dap-auto-configure-mode 1)
+  (dap-register-debug-template
+   "Chrome :: Debug main.js"
+   (list :type "pwa-chrome"
+         :request "launch"
+         :name "Launch Chrome main.js"
+         :url "http://localhost:3000"
+         :webRoot (expand-file-name "~/repos/rock-paper-scissors/")
+         :sourceMaps t
+         :runtimeExecutable "/usr/bin/google-chrome-stable")))
