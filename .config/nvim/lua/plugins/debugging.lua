@@ -3,7 +3,6 @@ return {
     dependencies = {
         "rcarriga/nvim-dap-ui",
         "nvim-neotest/nvim-nio",
-        "microsoft/vscode-js-debug",
     },
     config = function()
         local dap = require("dap")
@@ -72,6 +71,14 @@ return {
                     webRoot = '${workspaceFolder}',
                     sourceMaps = true,
                 },
+                {
+                    name = 'Debug Zen',
+                    type = 'firefox',
+                    request = 'launch',
+                    url = enter_launch_url,
+                    webRoot = '${workspaceFolder}',
+                    sourceMaps = true,
+                }
             }
         end
 
@@ -87,7 +94,10 @@ return {
         dap.listeners.before.event_exited.dapui_config = function()
             dapui.close()
         end
-        vim.keymap.set('n', '<leader>dc', function() require('dap').continue() end)
-        vim.keymap.set('n', '<leader>db', function() require('dap').toggle_breakpoint() end)
-    end
+
+        vim.keymap.set("n", "<Leader>dc", dap.continue, { desc = "Continue" })
+        vim.keymap.set("n", "<Leader>db", dap.toggle_breakpoint, { desc = "Toggle breakpoint" })
+        vim.keymap.set("n", "<Leader>dbc", dap.clear_breakpoints, { desc = "Clear all breakpoints" })
+        vim.keymap.set("n", "<Leader>dbl", dap.list_breakpoints, { desc = "Clear all breakpoints" })
+    end,
 }
